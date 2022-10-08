@@ -1,0 +1,174 @@
+@media (max-width: 1200px) {
+
+  /* contacts */
+  .contacts {
+    padding: 100px 50px;
+  }
+
+  .contacts__title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  /* header */
+
+  .header__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  /* intro */
+
+  .intro {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .intro__title {
+    font-size: 4em;
+  }
+
+  .intro__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /* aboutme */
+
+  .visible-content {
+    display: none;
+  }
+
+  .aboutme__right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .invisible-conent {
+    display: block;
+    flex-direction: column;
+  }
+
+  .aboutme__title {
+    font-size: 23px;
+  }
+
+  /* contacnts */
+
+  .contacts {
+    padding: 75px 25px;
+  }
+
+  .contacts__item {
+    margin-bottom: 20px;
+  }
+
+  /* footer */
+
+  .nav__list {
+    justify-content: center;
+  }
+
+  .footer__right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+
+  /* header */
+
+  .burger-open,
+  .nav-close {
+    display: block;
+  }
+
+  .header__content {
+    justify-content: end;
+    flex-direction: row;
+  }
+
+  .header__nav {
+    position: absolute;
+    top: -43px;
+    right: 0;
+    background-color: #fff;
+    padding-top: 42px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-width: 100%;
+    height: 150vh;
+    background: var(--white-color);
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform .3s ease-in-out, opacity .3s ease-in-out, visibility .3s ease-in-out;
+    visibility: hidden;
+  }
+
+  .header__nav.active {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav__item {
+    margin-right: 50px;
+  }
+
+  .nav__link {
+    font-size: 20px;
+  }
+
+  .nav__item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  .nav-close {
+    margin-left: auto;
+    margin-bottom: 50px;
+  }
+
+  .stop-scroll {
+    overflow: hidden;
+  }
+
+  /* intro */
+
+  .intro__title {
+    font-size: 2em;
+  }
+
+  /* aboutme */
+
+  .aboutme__right {
+    flex-direction: column;
+  }
+
+  .aboutme__img {
+    margin-bottom: 30px;
+  }
+
+  /* footer */
+
+  .footer__nav {
+    display: none;
+  }
+
+  .copy {
+    font-size: 13px;
+  }
+
+}
